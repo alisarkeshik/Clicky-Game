@@ -1,0 +1,101 @@
+[{
+    "id": 1,
+    "image": "https://media.giphy.com/media/d7ob8wEISlbDHofEQh/giphy.gif"
+  },
+  {
+    "id": 2,
+    "image": "assets/images/barkley.jpg",
+    "clicked": false
+},
+{
+    "id": 3,
+    "image": "assets/images/drexler.jpg",
+    "clicked": false
+},
+{
+    "id": 4,
+    "image": "assets/images/ewing.jpg",
+    "clicked": false
+},
+{
+    "id": 5,
+    "image": "assets/images/garnett.jpg",
+    "clicked": false
+},
+{
+    "id": 6,
+    "image": "assets/images/hill.jpg",
+    "clicked": false
+},
+{
+    "id": 7,
+    "image": "assets/images/iverson.jpg",
+    "clicked": false
+},
+{
+    "id": 8,
+    "image": "assets/images/kidd.jpg",
+    "clicked": false
+},
+{
+    "id": 9,
+    "image": "assets/images/kobe.jpg",
+    "clicked": false
+},
+{
+    "id": 10,
+    "image": "assets/images/malone.jpg",
+    "clicked": false
+},
+{
+    "id": 11,
+    "image": "assets/images/mj.jpg",
+    "clicked": false
+},
+{
+    "id": 12,
+    "image": "assets/images/payton.jpg",
+    "clicked": false
+},
+{
+    "id": 13,
+    "image": "assets/images/pippen.jpg",
+    "clicked": false
+},
+{
+    "id": 14,
+    "image": "assets/images/reggie.jpg",
+    "clicked": false
+},
+{
+    "id": 15,
+    "image": "assets/images/robinson.jpg",
+    "clicked": false
+},
+{
+    "id": 16,
+    "image": "assets/images/rodman.jpg",
+    "clicked": false
+},
+{
+    "id": 17,
+    "image": "assets/images/shaq.jpg",
+    "clicked": false
+},
+{
+    "id": 18,
+    "image": "assets/images/stockton.jpg",
+    "clicked": false
+},
+{
+    "id": 19,
+    "image": "assets/images/wilkins.jpg",
+    "clicked": false
+},
+{
+    "id": 20,
+    "image": "assets/images/dreamShake.gif",
+    "clicked": false
+}
+
+]
