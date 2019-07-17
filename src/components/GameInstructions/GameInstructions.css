@@ -1,0 +1,14 @@
+.jumbotron {
+    box-shadow: 0 2px 5px 0 darkslateblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.jumbo {
+    margin-top: 80px; 
+}
+
+.instructions {
+    text-align: center;
+}

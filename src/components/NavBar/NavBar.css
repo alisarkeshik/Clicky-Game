@@ -1,0 +1,41 @@
+.header {
+    background-image: linear-gradient(orangered, purple);
+    width: 100%;
+    min-height: 70px;
+    font:  oblique 15px black;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    box-shadow: 0 3px 3px black;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.header li {
+    display: inline-block;
+    width: 33%;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+.title{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+@media (max-width: 700px) {
+
+    .header li {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+    }
+}

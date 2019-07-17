@@ -1,0 +1,30 @@
+.gameCard {
+    width: 175px;
+    height: 175px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 7px;
+}
+
+.gameCard:hover {
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+
+    .gameCard {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .gameCard {
+        height: 75px;
+        width: 75px;
+    }
+}
