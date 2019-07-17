@@ -66,20 +66,20 @@ class StartOfGame extends Component {
 
     render() {
         return (
-            <div className=" animated fadeIn">
+            <div>
                 <NavBar score={this.state.score} topScore={this.state.topScore}></NavBar>
                 <Instructions message={this.state.message}></Instructions>
                 <Container>
                     {
                         this.state.data.map(element => (
-                            <div className="animated rotateIn">
+                            <div>
                                 <PlayerCard
                                     key={element.id}
                                     id={element.id}
                                     image={element.image}
                                     animate={!this.state.score && this.state.topScore}
                                     clicked={element.clicked}
-                                    handleClick={this.gameCardClick}
+                                    handleClick={this.PlayerCardClick}
                                 ></PlayerCard>
                             </div>
                         ))
