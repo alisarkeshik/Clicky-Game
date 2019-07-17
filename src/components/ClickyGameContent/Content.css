@@ -1,0 +1,18 @@
+.display {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    color: orangered;
+}
+
+.correct {
+    color: white;
+    font-size: 35px;
+}
+
+.incorrect {
+    color: black;
+    -webkit-text-stroke: 1px black;
+}

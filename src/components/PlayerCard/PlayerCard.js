@@ -1,15 +1,15 @@
 import React from "react";
-import "./GameCard.css";
+import "./PlayerCard.css";
 
-const GameCard = props => (
+const PlayerCard = props => (
     <div 
         role="img" 
         aria-label="click item" 
-        className={`gameCard ${props.animate? "animated shake": ""}`}
+        className={`playerCard ${props.animate? "animated shake": ""}`}
         style={{ backgroundImage: `url("${props.image}")` }}
         onClick={() => props.handleClick(props.id)}
     >
     </div>
 )
 
-export default GameCard;
+export default PlayerCard;

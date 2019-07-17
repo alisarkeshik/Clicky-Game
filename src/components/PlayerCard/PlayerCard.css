@@ -1,4 +1,4 @@
-.gameCard {
+.playerCard {
     width: 175px;
     height: 175px;
     margin-right: 20px;
@@ -8,14 +8,14 @@
     border-radius: 7px;
 }
 
-.gameCard:hover {
+.playerCard:hover {
     border: 2px solid yellow;
     cursor: pointer;
 }
 
 @media (max-width: 750px) {
 
-    .gameCard {
+    .playerCard {
         height: 100px;
         width: 100px;
     }
@@ -23,7 +23,7 @@
 
 @media (max-width: 400px) {
 
-    .gameCard {
+    .playerCard {
         height: 75px;
         width: 75px;
     }

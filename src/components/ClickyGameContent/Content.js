@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import "./GameMessage.css"
+import "./Content.css"
 
-class GameMessage extends Component {
+class Message extends Component {
     state = {
         animating: false,
         message: ''
@@ -29,7 +29,7 @@ class GameMessage extends Component {
     }
 
 
-    addAnimation = () => {
+    startAnimation = () => {
         if(this.state.message === 'correct'){
             return 'animated rubberBand'
         }else if(this.state.message === 'incorrect'){
@@ -39,13 +39,13 @@ class GameMessage extends Component {
         }
     }
 
-    updatedMessage = () => {
+    cardClicked = () => {
         if(this.state.message === 'correct'){
             return 'CORRECT!'
         }else if(this.state.message === 'incorrect'){
             return 'DUPLICATE CLICK. GAME OVER!'
         }else{
-            return 'Click An Image To Begin';
+            return 'Click A Player Card to Begin the Game.';
         }
     }
 
@@ -53,16 +53,16 @@ class GameMessage extends Component {
         return(
             <li
                 className={`
-                gameMessage 
-                ${this.state.animating? this.addAnimation(): ""} 
-                ${this.state.animating? this.state.message: "black"}`}
+                display
+                ${this.state.animating? this.startAnimation(): ""} 
+                ${this.state.animating? this.state.message: "text"}`}
                 id={`${this.state.message}`}
                 onAnimationEnd={() => this.setState()}
             >
-                {this.updatedMessage()}
+                {this.cardClicked()}
             </li>
         );
     }
 }
 
-export default GameMessage;
+export default Message;

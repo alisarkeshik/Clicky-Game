@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Container from "../Container";
-import GameCard from "../GameCard";
-import GameInstructions from "../GameInstructions";
+import PlayerCard from "../PlayerCard";
+import Instructions from "../ClickyGameInstructions";
 import NavBar from "../NavBar";
 import Footer from "../Footer"
 import data from "../../cards.json";
 
-class Game extends Component {
+
+class StartOfGame extends Component {
     state = {
         data,
         score: 0,
@@ -16,50 +17,50 @@ class Game extends Component {
     
 
     componentDidMount() {
-        this.setState({ data: this.shuffleArray(this.state.data) });
+        this.setState({ data: this.rearrangeCardArray(this.state.data) });
     }
 
-    shuffleArray = (data) => {
+    rearrangeCardArray = (data) => {
         return data.sort(function (a, b) { return 0.5 - Math.random() });
     }
 
-    resetTheArray = newArray => {
+    ArrayReset = newArray => {
         let resetData = data.map(element => ({ ...element, clicked: false }));
-        return (this.shuffleArray(resetData));
+        return (this.rearrangeCardArray(resetData));
     }
 
-    rightGuess = newArray => {
-        let newScore = this.state.score;
-        newScore++;
-        let newTopScore = Math.max(newScore, this.state.topScore);
+    correct = newArray => {
+        let score = this.state.score;
+        score++;
+        let newTopScore = Math.max(score, this.state.score);
         this.setState({
-            data: this.shuffleArray(newArray),
-            score: newScore,
+            data: this.rearrangeCardArray(newArray),
+            score: score,
             topScore: newTopScore,
             animation: "animation hinge"
         })
     }
 
-    wrongGuess = newArray => {
+    incorrect = newArray => {
         this.setState({
-            data: this.resetTheArray(newArray),
+            data: this.ArrayReset(newArray),
             score: 0
         })
     }
 
-    gameCardClick = id => {
-        let guessedRight = false;
+    PlayerCardClick = id => {
+        let correctClick = false;
         const newArray = this.state.data.map(element => {
             if (element.id === id && !element.clicked) {
                 element.clicked = true;
-                guessedRight = true;
+                correctClick = true;
             }
             return element
         })
-        if (guessedRight) {
-            this.rightGuess(newArray)
+        if (correctClick) {
+            this.correct(newArray)
         } else {
-            this.wrongGuess(newArray);
+            this.incorrect(newArray);
         }
     }
 
@@ -67,19 +68,19 @@ class Game extends Component {
         return (
             <div className=" animated fadeIn">
                 <NavBar score={this.state.score} topScore={this.state.topScore}></NavBar>
-                <GameInstructions message={this.state.message}></GameInstructions>
+                <Instructions message={this.state.message}></Instructions>
                 <Container>
                     {
                         this.state.data.map(element => (
                             <div className="animated rotateIn">
-                                <GameCard
+                                <PlayerCard
                                     key={element.id}
                                     id={element.id}
                                     image={element.image}
                                     animate={!this.state.score && this.state.topScore}
                                     clicked={element.clicked}
                                     handleClick={this.gameCardClick}
-                                ></GameCard>
+                                ></PlayerCard>
                             </div>
                         ))
                     }
@@ -90,4 +91,4 @@ class Game extends Component {
     }
 }
 
-export default Game;
+export default StartOfGame;
