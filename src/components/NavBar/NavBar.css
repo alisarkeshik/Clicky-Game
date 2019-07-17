@@ -1,12 +1,12 @@
 .header {
-    background-image: linear-gradient(orangered, purple);
+    background-image: linear-gradient(purple,orangered);
     width: 100%;
     min-height: 70px;
     font:  oblique 15px black;
     position: fixed;
     top: 0;
     margin: 0 auto;
-    box-shadow: 0 3px 3px black;
+    box-shadow: 10px 10px 10px black;
 }
 
 .header ul {

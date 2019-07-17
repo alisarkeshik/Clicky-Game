@@ -3,10 +3,15 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     font-weight: bolder;
+    background-color: rgba(255, 0, 0, 0.596);
+    color: white;
+    /* -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px; */
+    text-shadow: 7px 7px 7px black;
 }
 
 .jumbo {
-    margin-top: 80px; 
+    margin-top: 70px; 
 }
 
 .instructions {

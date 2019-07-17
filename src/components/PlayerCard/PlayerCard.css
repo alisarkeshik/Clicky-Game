@@ -1,17 +1,22 @@
 .playerCard {
     width: 175px;
     height: 175px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     background-size: cover;
-    box-shadow: 7px 7px 7px black;
-    border-radius: 7px;
+    box-shadow: 12px 12px 12px black;
+    border-radius: 5px;
 }
 
 .playerCard:hover {
-    border: 2px solid yellow;
+    border: 3px solid yellow;
     cursor: pointer;
 }
+
+.playerCard:active {
+    background-color: lime;
+}
+
 
 @media (max-width: 750px) {
 
