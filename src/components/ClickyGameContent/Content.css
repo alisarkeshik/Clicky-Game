@@ -1,5 +1,5 @@
 .display {
-    font-size: 25px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -7,15 +7,26 @@
 .text {
     color: white;
     -webkit-text-stroke: 1px black;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 10px 10px 10px black;
+    font-size: 28px;
 }
 
 .correct {
-    color: white;
-    font-size: 35px;
+    color: yellow;
+    font: 50px bolder;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 7px 7px 7px black;
+    /* background-color: yellow; */
+    padding-bottom: 20px;
+    /* border-radius: 5px; */
 }
 
 .incorrect {
-    color: black;
-    -webkit-text-stroke: 1px white;
+    color: red;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 7px 7px 7px black;
+    font: 30px bolder;
+    background-color: yellow;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }

@@ -1,20 +1,20 @@
 .jumbotron {
-    box-shadow: 0 2px 5px 0 red;
+    box-shadow: 0 10px 10px 0 black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: bolder;
-    background-color: rgba(255, 0, 0, 0.596);
+    font: 15px bolder;
+    background-color: rgba(255, 0, 0, 0.637);
     color: white;
-    /* -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px; */
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 12px 12px 12px black;
+    
 }
 
 .instructions {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .jumbo {
     margin-top: 70px; 
+    text-align: center;
 }
 

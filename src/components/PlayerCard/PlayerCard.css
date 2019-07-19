@@ -1,13 +1,17 @@
 .playerCard {
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 11px;
+    margin-bottom: 11px;
     width: 175px;
     height: 175px;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 12px 12px 12px black;
 }
 
+/* img {
+    height: 175px;
+    width: 175px;
+} */
 .playerCard:hover {
     border: 3px solid yellow;
     cursor: pointer;
