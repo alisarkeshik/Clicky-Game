@@ -10,10 +10,11 @@
     text-shadow: 7px 7px 7px black;
 }
 
+.instructions {
+    text-align: center;
+}
+
 .jumbo {
     margin-top: 70px; 
 }
 
-.instructions {
-    text-align: center;
-}

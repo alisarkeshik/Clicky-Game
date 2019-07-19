@@ -1,11 +1,11 @@
 .container {
-    display: flex;
-    min-height: 80%;
     flex-wrap: wrap;
-    justify-content: center;
+    z-index: -1;
     padding-top: 20px;
     padding-bottom: 50px;
     width: 90%;
+    justify-content: center;
     margin: 0 auto;
-    z-index: -1;
+    display: flex;
+    min-height: 80%;
   }

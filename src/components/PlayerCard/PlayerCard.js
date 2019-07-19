@@ -5,7 +5,7 @@ const PlayerCard = props => (
     <div 
         role="img" 
         aria-label="click item" 
-        className={`playerCard ${props.animate? "animated pulse": ""}`}
+        className={`playerCard ${props.animate? "animated swing": ""}`}
         style={{ backgroundImage: `url("${props.image}")` }}
         onClick={() => props.handleClick(props.id)}
     >

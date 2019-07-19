@@ -2,14 +2,15 @@
     position: relative;
     bottom: 0;
     margin: 0 auto;
+    background: blue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     min-height: 45px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-size: 25px;
     border-top: 2px solid black;
-    background: blue;
-    text-align: center;
+    
 
 }
 

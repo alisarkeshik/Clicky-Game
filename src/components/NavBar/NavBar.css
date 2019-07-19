@@ -1,21 +1,25 @@
 .header {
-    background-image: linear-gradient(purple,orangered);
+     margin: 0 auto;
+    box-shadow: 10px 10px 10px black;
+    background-image: linear-gradient(orangered,purple);
+     position: fixed;
+    top: 0;
     width: 100%;
     min-height: 70px;
-    font:  oblique 15px black;
-    position: fixed;
-    top: 0;
-    margin: 0 auto;
-    box-shadow: 10px 10px 10px black;
+    font:  bolder 15px black;
+}
+
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .header ul {
-    list-style-type: none;
-    margin: 0 auto;
+    text-align: center;
     padding: 0;
     width: 100%;
+    list-style-type: none;
+    margin: 0 auto;
     height: 100%;
-    text-align: center;
 }
 
 .header li {
@@ -23,12 +27,9 @@
     width: 33%;
     padding-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
+    font-weight: bolder;
+}
 
-}
-.title{
-    font-family: 'Shadows Into Light', cursive;
-}
 
 @media (max-width: 700px) {
 

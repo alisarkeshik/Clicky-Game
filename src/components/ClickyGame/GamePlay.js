@@ -37,7 +37,7 @@ class StartOfGame extends Component {
             data: this.rearrangeCardArray(newArray),
             score: score,
             topScore: newTopScore,
-            animation: "animation hinge"
+            animation: "animation shake"
         })
     }
 

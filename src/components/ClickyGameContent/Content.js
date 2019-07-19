@@ -31,9 +31,9 @@ class Message extends Component {
 
     startAnimation = () => {
         if(this.state.message === 'correct'){
-            return 'animated rubberBand'
+            return 'animated pulse'
         }else if(this.state.message === 'incorrect'){
-            return 'animated wobble'
+            return 'animated shake'
         }else{
             return '';
         }

@@ -1,11 +1,11 @@
 .playerCard {
-    width: 175px;
-    height: 175px;
     margin-right: 15px;
     margin-bottom: 15px;
+    width: 175px;
+    height: 175px;
     background-size: cover;
-    box-shadow: 12px 12px 12px black;
     border-radius: 5px;
+    box-shadow: 12px 12px 12px black;
 }
 
 .playerCard:hover {
